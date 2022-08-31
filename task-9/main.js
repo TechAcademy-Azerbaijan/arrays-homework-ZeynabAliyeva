@@ -4,6 +4,11 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-    // Write code here
-  
+    let n = result.input.split(" ")
+    let arr = [];
+    for(let i=0; i<n.length; i++){
+        let element = n[i]
+        arr.unshift(element)
+    }
+    console.log(arr.join(" "));
 });
